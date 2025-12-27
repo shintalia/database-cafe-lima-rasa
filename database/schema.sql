@@ -1,0 +1,5 @@
+CREATE TABLE Pelanggan (
+    Id_Pelanggan INT AUTO_INCREMENT PRIMARY KEY,
+    Nama VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) UNIQUE
+);
