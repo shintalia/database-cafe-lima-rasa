@@ -1,0 +1,12 @@
+DELIMITER $$
+
+CREATE FUNCTION Hitung_Jumlah_Pelanggan()
+RETURNS INT
+DETERMINISTIC
+BEGIN
+    DECLARE total INT;
+    SELECT COUNT(*) INTO total FROM Pelanggan;
+    RETURN total;
+END$$
+
+DELIMITER ;
